@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+:root{
+  --primary-color: rgb(240, 11, 81);
+  
+}
+.body{
+  background-color:#eef0f4;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,11 +34,75 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+.nav-link{
+  font-size: 1.3em !important;
+  color: var(--primary-color) !important;
+}
+.nav-link:hover{
+  opacity: .6;
+}
+
+#bg-gradient{
+  background: linear-gradient(to right, rgb(240, 11, 81), rgb(115, 0, 98)) !important;
+}
+
+#btn-outline-fill,
+#btn-fill{
+  border-radius: 2rem;
+  padding: .2rem 1rem;
+  border:2px solid var(--primary-color);
+  transition: .5s;
+}
+#btn-fill{
+  background: var(--primary-color);
+  color:white !important;
+}
+#btn-fill:hover,
+#btn-outline-fill:hover{
+  opacity: .7;
+  transform: scale(95%);
+}
+#btn-outline-fill:hover{
+  background: var(--primary-color) !important;
+  color:white !important;
+}
+
+.navbar-toggler-icon{
+  color: var(--primary-color);
+  transition: .5s;
+}
+.navbar-toggler{
+  border-color: var(--primary-color) !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover  {
+  background: var(--primary-color);
+  transition: .6s;
+  opacity: .7;
+}
+.navbar-toggler:focus .navbar-toggler-icon,
+.navbar-toggler:hover .navbar-toggler-icon{
+  color: white !important;
+}
+.img-logo{
+  width: 8rem;
+}
+
+
+@media screen and (max-width:1000px) {
+  .search-container{
+    width: 90% !important;
   }
-  to {
-    transform: rotate(360deg);
+  .search-container input{
+    font-size: 1.2em !important;
+    padding: 1em !important;
+    font-size: 1em;
+  }
+  .search-container button{
+    padding: .3em 1em !important;
+    font-size: 1em;
   }
 }
