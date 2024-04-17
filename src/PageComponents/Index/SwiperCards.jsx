@@ -19,7 +19,7 @@ export default function SwiperCards({jobdata}) {
             <Swiper
               navigation={true}
               modules={[Navigation, Autoplay]}
-              autoplay={{ delay: 3000,pauseOnMouseEnter:true }}
+              autoplay={{ delay: 3000 }}
               speed={1000}
               slidesPerView={1} // Set number of slides per view
               breakpoints={{

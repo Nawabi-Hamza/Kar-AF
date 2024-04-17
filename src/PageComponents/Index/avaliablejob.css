@@ -1,0 +1,93 @@
+
+.job-wrapper{
+  border-radius: .7em;
+  background-color: #fafbfc;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.ava-job{
+    font-weight: 600;
+}
+.navgation-job{
+    background-color: rgba(255, 0, 0, 0.06);
+    padding:.5em;
+    border-radius: 2em;
+}
+.navgation-job .nav-link{
+    color: black !important;
+    padding:.3em 1em;
+    border-radius: 2em;
+    font-size: 1.2em !important;
+
+}
+.navgation-job .active{
+    background-color: rgba(255, 0, 0, 0.468);
+}
+.card-img{
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+}
+.img-jobs{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-job {
+    background: #ffffff;
+    border-radius: .7em;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    transition: .3s;
+}
+.card-job:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transform: translateX(20px);
+}   
+.avai-job-text{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.tags{
+    background-color: rgba(255, 0, 0, 0.1) !important;
+    padding: .1em .5em !important;
+    border-radius: 2em;
+    font-size: 1.1em !important;
+}
+
+@media screen and (max-width:1200px) {
+    .navgation-job .nav-link{
+        font-size: .8em !important;
+    }
+    .tags.nav-link{
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ava-job{
+        font-size: 1.2em;
+    }
+    .navgation-job .nav-link{
+        display: none;
+    }
+    .navgation-job .active{
+        display: block;
+        position: relative;
+    }
+    .navgation-job:hover .not-active{
+        display: inline-block  ;
+    } 
+    .location-date{
+        font-size: .8em;
+    }
+    .card-img{
+        height: 50px;
+        width: 50px;
+    }
+    .card-job:hover{
+        box-shadow: none;
+        transform: none;
+    }  
+}
+.page-link{
+    cursor: pointer;
+}
