@@ -110,3 +110,45 @@
     font-size: 1em;
   }
 }
+
+.text-bold{
+  font-weight: 600;
+}
+
+.img-compnay-all{
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  transition: .5s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+  border-radius: 1em;
+}
+
+.img-compnay-all img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.img-compnay-all:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.foot-link{
+  text-decoration: none;
+  color: #eff0f4b5;
+  display: block;
+  margin-top: 1em;
+  font-size: 1em!important;
+  transition: .3s;
+}
+.foot-link:hover{
+  color: #eff0f4cf;
+}
+
+
+

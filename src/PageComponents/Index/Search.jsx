@@ -11,7 +11,7 @@ function Search() {
               <span className='fw-bolder'>network</span> or Hire the <span className='fw-bolder'>best talents!</span></p>
           </div>
           <div className="totla text-white d-flex justify-content-center mt-5 gap-4">
-              <span>100k+ Jobs</span>
+              <span>300k+ Jobs</span>
               <span>7k+ Companies</span>
           </div>
           <div className="search">

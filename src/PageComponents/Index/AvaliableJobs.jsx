@@ -53,9 +53,9 @@ function AvaliableJobs({ avalaibleJob }) {
               {/* Every Available Job */}
               {avalaibleJob &&
                 limitData.map((item) => (
+                  <Link to={`/singlejob/${item.id}`} key={item.id} className="link-underline link-underline-opacity-0">
                   <div
-                    key={item.id}
-                    className="card-job my-2 p-4 pb-3 d-block d-md-flex justify-content-between align-items-center"
+                    className="card-job my-2 p-4 pb-3 d-block d-md-flex text-dark justify-content-between align-items-center"
                   >
                     <div className="card-head d-flex justify-content-start gap-3 flex-fill">
                       <div className="card-img bg-secondary rounded rounded-circle p-1">
@@ -65,7 +65,7 @@ function AvaliableJobs({ avalaibleJob }) {
                           alt=""
                         />
                       </div>
-                      <div className="card-main text-start d-flex flex-column justify-content-center">
+                      <div className="card-main px-3 px-md-0 text-start d-flex flex-column justify-content-center">
                         <h5 className="avai-job-text">{item.jobTitle}</h5>
                         <div className="d-md-flex gap-4">
                           <p className="company-name">{item.company}</p>
@@ -78,21 +78,22 @@ function AvaliableJobs({ avalaibleJob }) {
                     <div className="card-right ms-5 ms-md-0 d-flex gap-3">
                       <p className="tags nav-link text-dark">Female</p>
                       <p className="card-right-text d-none d-lg-flex gap-3">
-                        <Link to="" className="nav-link">
+                        {/* <Link to="" className="nav-link">
                           <i className="bi bi-info-circle text-dark"></i>
-                        </Link>{" "}
+                        </Link>{" "} */}
                         <Link to="" className="nav-link">
                           <i className="bi bi-cloud-download text-dark"></i>
                         </Link>
                       </p>
                     </div>
                   </div>
+                  </Link>
                 ))}
               <div className="">
                 <nav className="my-5">
                   <ul className="pagination d-flex justify-content-center">
                     <li
-                      className={`page-item ${first==0 ? "disabled":null}`}
+                      className={`page-item ${first===0 ? "disabled":null}`}
                       onClick={handlePrevious}
                     >
                       <b className="page-link nav-link">&lt; Previouse</b>

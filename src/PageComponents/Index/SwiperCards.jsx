@@ -8,6 +8,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles.css";
+import { Link } from "react-router-dom";
+// import { baseUrl } from "../../Variables";
 
 
 
@@ -36,14 +38,16 @@ export default function SwiperCards({jobdata}) {
           >
             {jobdata.map( (item)=>(
               <SwiperSlide key={item.id} className="swiper-card bg-white p-4">
-              <div className="d-flex gap-3 justify-content-around">
-                <img src={`./assets/${item.img}`} alt="" className="swiper-img" />
-                <div className="w-100 item-swiper-body d-flex flex-column justify-content-between ">
-                    <p className="d-flex justify-content-between h5 fw-bold text-secondary"><span>{item.company}</span><span className="d-flex  gap-2"><i className="bi bi-file-earmark-ruled "></i><i className="bi bi-file-earmark-zip"></i></span></p>
-                    <h4 className="h4 d-flex">{item.jobTitle}</h4>
-                    <p className="d-flex justify-content-between span "><span>{item.startDate}</span><span className="badge rounded-pill badge-bg-warning">Promoted</span></p>
-                </div>
-              </div>
+                <Link to={`/singlejob/${item.id}`} className="text-dark swiper-single-job" >
+                  <div className="d-flex gap-3 justify-content-around">
+                    <img src={`./assets/${item.img}`} alt="" className="swiper-img" />
+                    <div className="w-100 item-swiper-body d-flex flex-column justify-content-between ">
+                        <p className="d-flex justify-content-between h5 fw-bold text-secondary"><span>{item.company}</span><span className="d-flex  gap-2"><i className="bi bi-file-earmark-ruled "></i><i className="bi bi-file-earmark-zip"></i></span></p>
+                        <h4 className="h4 d-flex">{item.jobTitle}</h4>
+                        <p className="d-flex justify-content-between span "><span>{item.startDate}</span><span className="badge rounded-pill badge-bg-warning">Promoted</span></p>
+                    </div>
+                  </div>
+                </Link>
             </SwiperSlide>
             ))}
           </Swiper>
