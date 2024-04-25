@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import { baseUrl } from '../Variables'
+import Logo from "./Logo.png"
 function Nav() {
    
     
@@ -8,7 +8,7 @@ function Nav() {
         <nav className="navbar sticky-top navbar-expand-lg bg-light py-md-3">
             <div className="container-lg container-fluid">
                 <Link className="navbar-brand" to="/" >
-                    <img src={`${baseUrl}/assets/logo.png`} className='img-logo' alt="Logo" />
+                    <img src={Logo} className='img-logo' alt="Logo" />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon icon-red">
