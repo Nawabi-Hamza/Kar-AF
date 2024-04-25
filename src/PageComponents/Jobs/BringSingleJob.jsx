@@ -39,7 +39,7 @@ export function BringSingleJob({ data }) {
                   {data.province.length > 1 ? "(Multi Location)- " : null}
                   {data.province.length > 1
                     ? data.province.map((item) => (
-                        <em className="ms-2">{item},</em>
+                        <em className="ms-2" key={item}>{item},</em>
                       ))
                     : data.province[0]}
                 </span>

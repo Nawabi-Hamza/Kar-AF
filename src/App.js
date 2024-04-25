@@ -13,8 +13,10 @@ import './App.css';
 import SingleJob from './Pages/SingleJob';
 
 function App() {
+ 
+  
   return ( 
-    <div className="App">
+    <div className="App" id='firstSection'>                   
       <BrowserRouter >
           <Routes> 
             <Route element={<NavbarFooter />}>

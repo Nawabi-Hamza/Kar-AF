@@ -38,7 +38,7 @@ export default function SwiperCards({jobdata}) {
           >
             {jobdata.map( (item)=>(
               <SwiperSlide key={item.id} className="swiper-card bg-white p-4">
-                <Link to={`/singlejob/${item.id}`} className="text-dark swiper-single-job" >
+                <Link to={`/singlejob/${item.id}`} className="text-dark swiper-single-job" id="scroll" >
                   <div className="d-flex gap-3 justify-content-around">
                     <img src={`./assets/${item.img}`} alt="" className="swiper-img" />
                     <div className="w-100 item-swiper-body d-flex flex-column justify-content-between ">

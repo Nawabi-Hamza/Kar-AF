@@ -15,7 +15,7 @@ function TrustedCompany({companies}) {
                 <div className="container-fluid">
                     <div className="row my-5 py-5">
                         {companies && com.map((item)=>(
-                            <div className="col-6 col-md-4 col-xl-2 ">
+                            <div className="col-6 col-md-4 col-xl-2 " key={item.id}>
                                 <Link className='img-compnay-all m-2'>
                                     <img src={`./assets/${item.img}`} className='bg-light img-compnay rounded rounded-circle' alt="" />
                                 </Link>

@@ -4,6 +4,24 @@ import { Link } from "react-router-dom"
 
 function Foot() {
   const currentDate = new Date().getFullYear();
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    const firstSection = document.getElementById('firstSection');
+  
+    // Add event listener to the button
+    scrollToTopButton.addEventListener('click', function() {
+      // Scroll to the top of the page
+      firstSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  window.addEventListener('scroll',(e)=>{
+    if(window.scrollY > 300){
+        document.getElementById("scrollToTopButton").style.display = "block";
+    }else{
+        document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  })
   return (
     <div id="bg-gradient">
       <div className="container-lg container-fluid text-start mt-5 text-white p-3 p-md-5">
@@ -42,6 +60,7 @@ function Foot() {
             </div>
           </div>
         </div><br /><br /><br/>
+        <button className="btn-scroll-to-top" id="scrollToTopButton"><i className="bi bi-arrow-up-circle"></i></button>
         <hr />
         <div className="d-md-flex justify-content-between text-light">
           <h6>© 2023 - {currentDate} Kar.af | All Rights Reserved</h6>

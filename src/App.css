@@ -152,3 +152,28 @@
 
 
 
+
+
+
+.btn-scroll-to-top{
+  position:fixed;
+  right: 2%;
+  bottom:2%;
+  border: 1px solid var(--primary-color);
+  background: rgb(240, 11, 81);
+  font-size: 1.6em;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .6s;
+  text-align: center;
+  z-index: 9;
+}
+.btn-scroll-to-top:hover{
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
