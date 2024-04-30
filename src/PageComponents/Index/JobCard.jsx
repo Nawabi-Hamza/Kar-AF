@@ -30,9 +30,9 @@ function JobCard({data}) {
                         {/* <Link to="" className="nav-link">
                           <i className="bi bi-info-circle text-dark"></i>
                         </Link>{" "} */}
-                        <Link to="" className="nav-link">
+                        {/* <Link to="" className="nav-link"> */}
                           <i className="bi bi-cloud-download text-dark"></i>
-                        </Link>
+                        {/* </Link> */}
                       </p>
                     </div>
                   </div>

@@ -106,7 +106,7 @@ export default Jobs;
 const style = {
   searchContainer: {
     position: "relative",
-    width: "60%",
+    maxWidth: "900px",
     margin: "2.5em auto",
     transform: "translateY(40px)",
   },

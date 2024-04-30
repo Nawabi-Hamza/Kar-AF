@@ -54,7 +54,7 @@ function AvaliableJobs({ avalaibleJob }) {
               {/* Every Available Job */}
               {avalaibleJob &&
                 limitData.map((item) => (
-                  <JobCard data={item}/>
+                  <JobCard data={item} key={item.id}/>
                 ))}
               <div className="">
                 <nav className="my-5">

@@ -55,7 +55,9 @@ function Foot() {
               <div className="col-6 col-lg-3">
                   <h4 className="my-5 text-bold">Contact</h4>
                   <Link className="foot-link" to='/'>info@kar.af</Link>
-                  <Link className="foot-link" to='/'>Contact Us</Link>
+                  <Link className="foot-link" to='tel:+93 766420877'>+93 766420877</Link>
+                  <Link className="foot-link" to='tel:+93 772155144'>+93 772155144</Link>
+                  {/* <Link className="foot-link" to='/'>Contact Us</Link> */}
               </div>
             </div>
           </div>
