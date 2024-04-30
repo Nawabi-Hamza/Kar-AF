@@ -129,7 +129,7 @@
 .img-compnay-all img{
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  --webkit-object-fit: cover;
 }
 
 .img-compnay-all:hover{
@@ -140,14 +140,14 @@
 
 .foot-link{
   text-decoration: none;
-  color: #eff0f4b5;
+  color: rgba(240, 241, 245, 0.71);
   display: block;
   margin-top: 1em;
   font-size: 1em!important;
   transition: .3s;
 }
 .foot-link:hover{
-  color: #eff0f4cf;
+  color: rgba(239, 240, 244, 0.812);
 }
 
 
