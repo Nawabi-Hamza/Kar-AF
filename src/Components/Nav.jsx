@@ -31,7 +31,10 @@ function Nav() {
                                 <Link className="nav-link" to="/companies">Companies</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/our-projects">Scholorship</Link>
+                                <Link className="nav-link" to="/scholorships">Scholorship</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/our-project">Projects</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link" to="/services" role="button">

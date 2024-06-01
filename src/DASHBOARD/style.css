@@ -1,0 +1,14 @@
+.dashboard{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to left, rgb(240, 11, 81), rgb(115, 0, 98));
+    filter: brightness(70%);
+}
+
+
+@media screen and (max-width:996px) {
+    .dashboard{
+        height: max-content;
+    }
+    
+}

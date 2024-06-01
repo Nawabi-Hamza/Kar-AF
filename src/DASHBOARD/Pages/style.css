@@ -1,0 +1,8 @@
+.main-section{
+    margin: .5em auto;
+    background: #fff;
+    height: 90vh;
+    overflow-Y: auto;
+    border-radius: 1em;
+    padding: .5em 1em;
+}

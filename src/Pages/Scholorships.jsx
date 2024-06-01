@@ -1,10 +1,14 @@
+
+
+
+
 import React from 'react'
 import CommingSoon from './CommingSoon'
 
-function Services() {
+function Scholorships() {
   return (
     <div><CommingSoon /></div>
   )
 }
 
-export default Services
+export default Scholorships

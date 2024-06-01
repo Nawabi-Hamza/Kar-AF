@@ -1,10 +1,10 @@
 import React from 'react'
 import CommingSoon from './CommingSoon'
 
-function Services() {
+function News() {
   return (
-    <div><CommingSoon /></div>
+    <div><CommingSoon/></div>
   )
 }
 
-export default Services
+export default News

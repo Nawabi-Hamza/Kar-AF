@@ -11,6 +11,17 @@ import Services from './Pages/Services';
 import NotFound from './Pages/404';
 import './App.css';
 import SingleJob from './Pages/SingleJob';
+import Scholorships from './Pages/Scholorships';
+import News from './Pages/News';
+import Login from './Pages/Login';
+import Dashboard from './DASHBOARD/Dashboard';
+import Main from './DASHBOARD/Components/Main';
+import Profile from './DASHBOARD/Pages/Profile';
+import Scholorshpis from './DASHBOARD/Pages/Scholorshpis';
+import JobsAdmin from './DASHBOARD/Pages/Jobs';
+import CompaniesAdmin from './DASHBOARD/Pages/Companies';
+import ServicesAdmin from './DASHBOARD/Pages/Services';
+import Users from './DASHBOARD/Pages/Users';
 
 function App() {
  
@@ -24,11 +35,24 @@ function App() {
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/singlejob/:id" element={<SingleJob />} />
               <Route path="/companies" element={<Companies />} />
-              <Route path="/our-projects" element={<Projects />} />
+              <Route path="/scholorships" element={<Scholorships />} />
+              <Route path="/news" element={<News />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/register" element={<Register />} />
-            </Route>
+              <Route path="/our-project" element={<Projects />} />
               <Route path="*" element={<NotFound />} />
+            </Route>
+            {/* Login and Register page */}
+            <Route path="/login" element={<Login />} ></Route>
+            <Route path="/register" element={<Register />} ></Route>
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="/dashboard/" element={<Main />} />
+              <Route path="/dashboard/service" element={<ServicesAdmin />} />
+              <Route path="/dashboard/profile" element={<Profile />} />
+              <Route path="/dashboard/scholorship" element={<Scholorshpis />} />
+              <Route path="/dashboard/users" element={<Users />} />
+              <Route path="/dashboard/jobs" element={<JobsAdmin />} />
+              <Route path="/dashboard/companies" element={<CompaniesAdmin />} />
+            </Route>
           </Routes>
       </BrowserRouter>
     </div>

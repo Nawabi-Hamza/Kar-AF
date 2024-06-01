@@ -1,0 +1,16 @@
+
+:root{
+    --primary-color:rgb(240, 11, 81);
+}
+
+
+.register,
+.login{
+    height: 100vh;
+}
+
+.login a,
+.register a
+{
+    color: var(--primary-color);
+}

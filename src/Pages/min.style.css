@@ -1,0 +1,16 @@
+
+
+
+
+.img-card{
+    width:100%;
+    object-fit:cover;
+    height:100%;
+    border-radius:.5em 0 0 .5em;
+}
+
+@media screen and (max-width:768px) {
+    .img-card{
+        border-radius: .5em .5em 0 0;
+    }
+}

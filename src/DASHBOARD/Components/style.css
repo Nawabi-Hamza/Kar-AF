@@ -1,0 +1,36 @@
+.sidebar-links{
+    height: 90vh;
+    overflow-Y: auto;
+    padding: .5em 1em;
+}
+.sidebar-links .sidebar-link{
+    display: block;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 600;
+    /* border-radius: .2em; */
+    padding: .7em .5em;
+    text-decoration: none;
+    border-bottom: 1px solid whitesmoke;
+    transition: .5s;
+}
+.sidebar-links .sidebar-link:hover{
+    filter: brightness(0%);
+}
+.main-section{
+    margin: .5em auto;
+    background: #fff;
+    height: 90vh;
+    overflow-Y: auto;
+    border-radius: 1em;
+    padding: .5em 1em;
+}
+
+@media screen and (max-width:996px) {
+    .sidebar-links,
+    .main-section{
+        height: max-content;
+    }
+    
+}
