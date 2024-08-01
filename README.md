@@ -37,8 +37,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Deployment
 ### `npm run build` fails to minify
 
-<br>
-<br>
-<br>
-<br>
+### `Page Result`
+
 <img src="https://api.pikwy.com/web/66ab27011b7ec8371940db08.png" alt="kar-af">
