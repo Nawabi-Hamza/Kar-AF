@@ -41,4 +41,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <br>
 <br>
 <br>
-<iframe src="https://kar-af.netlify.app/" width="100%" height="700"></iframe>
+<img src="https://api.pikwy.com/web/66ab27011b7ec8371940db08.png" alt="kar-af">
